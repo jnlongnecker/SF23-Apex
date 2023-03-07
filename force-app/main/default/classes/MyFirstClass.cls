@@ -85,30 +85,30 @@ public class MyFirstClass {
         return returnMessage;
     }
 
-    public void PrintIfSpecial(Double input) {
-        // Special numbers: 3.14, 7, 14, 27.4
-        // Kinda Special numbers: -1.06, 9.86, 10
+    // public void PrintIfSpecial(Double input) {
+    //     // Special numbers: 3.14, 7, 14, 27.4
+    //     // Kinda Special numbers: -1.06, 9.86, 10
 
-        String messageIfSpecial = 'WOAH that\'s a special number!';
-        String messageIfKindaSpecial = 'That\'s kinda cool but not that cool.';
-        String messageIfBoring = 'BOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO';
+    //     String messageIfSpecial = 'WOAH that\'s a special number!';
+    //     String messageIfKindaSpecial = 'That\'s kinda cool but not that cool.';
+    //     String messageIfBoring = 'BOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO';
 
-        switch on input {
-            when 3.14, 14, 27.4 {
-                System.debug(messageIfSpecial);
-            }
-            when 7 {
-                // 7 is social distancing
-                System.debug(messageIfSpecial);
-            }
-            when -1.06, 9.86, 10 {
-                System.debug(messageIfKindaSpecial);
-            }
-            when else {
-                System.debug(messageIfBoring);
-            }
-        }
-    }
+    //     switch on input {
+    //         when 3.14, 14, 27.4 {
+    //             System.debug(messageIfSpecial);
+    //         }
+    //         when 7 {
+    //             // 7 is social distancing
+    //             System.debug(messageIfSpecial);
+    //         }
+    //         when -1.06, 9.86, 10 {
+    //             System.debug(messageIfKindaSpecial);
+    //         }
+    //         when else {
+    //             System.debug(messageIfBoring);
+    //         }
+    //     }
+    // }
 
     // FunWithLoops(10);
 
@@ -154,7 +154,6 @@ public class MyFirstClass {
         for (String myValue : myList) {
             System.debug(myValue);
         }
-
     }
 
     public void DebugHelloWorld() {

@@ -2,6 +2,14 @@
 
 // sfdx force:apex:execute -f aexec/anon.apex > aexec/log.txt
 
-MyFirstClass myClass = new MyFirstClass();
+Calculator calc = new Calculator();
 
-myClass.DebugHelloWorld();
+Integer p1 = calc.Multiply(8, 7);
+Integer p2 = calc.Multiply(-4, -5);
+Integer p3 = calc.Multiply(-4, 5);
+Integer p4 = calc.Multiply(4, -5);
+
+System.debug(p1); // 56
+System.debug(p2); // 20
+System.debug(p3); // -20
+System.debug(p4); // -20
