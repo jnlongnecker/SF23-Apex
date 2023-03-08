@@ -6,6 +6,7 @@
 .sf/
 .sfdx/
 .localdevserver/
+.pmdCache
 deploy-options.json
 
 # LWC VSCode autocomplete
