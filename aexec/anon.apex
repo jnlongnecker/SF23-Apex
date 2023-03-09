@@ -2,14 +2,10 @@
 
 // sfdx force:apex:execute -f aexec/anon.apex > aexec/log.txt
 
-Calculator calc = new Calculator();
+List<Account> myAccounts = new List<Account>();
 
-Integer p1 = calc.Multiply(8, 7);
-Integer p2 = calc.Multiply(-4, -5);
-Integer p3 = calc.Multiply(-4, 5);
-Integer p4 = calc.Multiply(4, -5);
+for (Integer i = 0; i < 25; i++) {
+  myAccounts.add(new Account(name = 'Acc ' + i));
+}
 
-System.debug(p1); // 56
-System.debug(p2); // 20
-System.debug(p3); // -20
-System.debug(p4); // -20
+Database.insert(myAccounts, false);
